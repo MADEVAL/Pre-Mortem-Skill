@@ -1,5 +1,9 @@
 # Premortem Skill
 
+[![Version](https://img.shields.io/badge/version-1.0-blue)]()
+[![License](https://img.shields.io/badge/license-GPL--3.0-green)](LICENSE)
+[![Compatibility](https://img.shields.io/badge/compatibility-any%20LLM-purple)]()
+
 > "The premortem is the single most valuable decision-making technique I know."
 > - Daniel Kahneman
 
@@ -56,6 +60,18 @@ Plus a 4-sentence chat summary: most likely failure, hidden assumption, top revi
 - **Gap check at the end** - no premortem catches everything; name what you missed
 - **Record refusals** - if the user dismisses a failure mode, log it; epistemic hygiene over comfort
 
+## Installation
+
+Copy `SKILL.md` into your agent's skills directory:
+
+```
+~/.agents/skills/premortem/SKILL.md
+```
+
+Or for standalone: copy contents of `SKILL.md` as system prompt.
+
+---
+
 ## Not to be confused with
 
 | | Premortem | LLM Council |
@@ -64,3 +80,9 @@ Plus a 4-sentence chat summary: most likely failure, hidden assumption, top revi
 | Mechanism | Prospective hindsight | Multi-perspective debate |
 | Output | Failure modes + revised plan + commitment | Comparative viewpoints |
 | Use when | You have a plan and the cost of being wrong is high | You're weighing options and want diverse takes |
+
+---
+
+## License
+
+GPL-3.0. Based on Gary Klein's premortem method (Harvard Business Review). See [LICENSE](LICENSE).
